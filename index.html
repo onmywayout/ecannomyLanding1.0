@@ -41,15 +41,15 @@
                         <img src="assets/logoBlanco.png" width="100%">
                     </div>
                 </div>
-                <div class="col-md-9 col-sm text-right">
-                    <div class="itemContenedorSuperior">
-                    <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="col-md-7 col-sm text-md-center text-right">
+                <div class="itemContenedorSuperior">
+                <nav class="navbar navbar-expand-sm navbar-light" style="padding-top:2px">
                     <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
+                            <span class="navbar-toggler-icon" id="botonHamburguesa"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" data-toggle="collapse" data-target="#navbarNav">
                         <ul class="nav nav-pills  nav-fill mb-3 TabsPrincipal" id="pills-tab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" id="pills-soluciones-tab" data-toggle="pill" href="#pills-soluciones" role="tab" aria-controls="pills-soluciones" aria-selected="true">Soluciones</a>
@@ -60,21 +60,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Acerca de</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item d-none d-block d-md-none">
                                 <a class="nav-link botonContactanos" id="pills-contact-form" data-toggle="pill" href="#pills-form" role="tab" aria-controls="pills-form" aria-selected="false">Contáctanos</a>
                             </li>
                         </ul>
                     </ul>
                 </div>
-                    </nav>
-                    </div>
+                </nav>
+                </div>
                </div>
-             <!-- <div class="col-md-3 text-right"> -->
+             <div class="col-md-2 text-right d-none d-sm-none d-md-block"> 
                  
-                 <!-- <div class="contenedorBotonContactanos itemContenedorSuperior">
-                     <input class="botonContactanos " id="submit" type="submit" value="Contáctanos" />
-                </div> -->
-            <!-- </div> -->
+                 <div class="contenedorBotonContactanos itemContenedorSuperior">
+                     <input class="botonContactanos " id="submit" type="submit" value="Contáctanos" onclick='$("#pills-contact-form").click()' />
+                </div>
+            </div>
 
 
         </div>
@@ -93,13 +93,24 @@
             <!-- Tab Soluciones -->
             <div class="tab-pane fade  show active  tabSoluciones" id="pills-soluciones" role="tabpanel" aria-labelledby="pills-soluciones-tab">
                 <div class="solucionesSuperior">
-                    <p>Creamos las condiciones para entregar soluciones adecuadas a cada participante del ciclo productivo en la industria del cannabis medicinal
+                    <div style="text-align:left">
+                        <h3>Sé pionero</h3>
+                        <p>Aprovecha la dinámica del mercado e invierte en <br> disruptivos proyectos de alto rendimiento
                         </p>
-                <input class="submit-btn botonContactanos comienzaExperiencia" onclick='document.getElementById("pills-contact-form").click()' id="submit" type="submit" value="Comienza tu experiencia" />
+                    </div>
+                <!-- <input class="submit-btn botonContactanos comienzaExperiencia" onclick='document.getElementById("pills-contact-form").click()' id="submit" type="submit" value="Comienza tu experiencia" /> -->
                 </div>    
 
                 <div class="container">
                     <div class="row">
+                        <div class="col-sm text-center">
+                                <img src="assets/inversion.png" class="imagenSolucion">
+                                <br><br>
+                                <b>Inversión</b>
+                                <br><br>
+                                <p>Consigue oportunidades claras para el desarrollo de capital, proyectos ecológicos y desarrollo tecnológico dentro del entorno más atractivo
+                                </p>
+                            </div>
                         <div class="col-sm text-center">
                             <img src="assets/farm.png" class="imagenSolucion">
                             <br><br>
@@ -116,14 +127,7 @@
                             <p>Ubica la materia prima que necesitas, negociando en condiciones competitivas y aprovechando las ofertas que brinda el mercado
                                 </p>
                         </div>
-                        <div class="col-sm text-center">
-                            <img src="assets/inversion.png" class="imagenSolucion">
-                            <br><br>
-                            <b>Inversión</b>
-                            <br><br>
-                            <p>Consigue oportunidades claras para el desarrollo de capital, proyectos ecológicos y desarrollo tecnológico dentro del entorno más atractivo
-                            </p>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

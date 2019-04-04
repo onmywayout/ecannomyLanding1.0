@@ -73,11 +73,12 @@ input[type="submit"]
     border-radius: 2px;
     transition: all .3s;
     background: #0C7A4E;
-    color: #fff;
+    color: #fff !important;
     position: relative;
     border: white;
     border-width: 1px;
     border-style: solid;
+    margin-top: 0px !important;
 }
 .comienzaExperiencia
 {
@@ -109,6 +110,37 @@ input[type="submit"]
         margin-top: -98px;
     }
 
+    .nav
+    {
+        display: block !important;
+        margin-top: -24px;
+        /* z-index: 3; */
+    }
+
+   
+
+}
+
+@media only screen and (min-width: 768px) 
+{
+    .navbar-expand-sm .navbar-nav .nav-link 
+    {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        padding-top: 25px;
+        margin-top: -18px;
+        padding-bottom: 24px;
+        border-radius: 0px;
+    }
+    .navbar
+    {
+        padding-top:2px !important;
+    }
+
+    .nav-fill .nav-item 
+    {
+        min-width: 100px !important;
+    }
 }
 
 .tab-content
