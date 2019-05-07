@@ -73,11 +73,12 @@ input[type="submit"]
     border-radius: 2px;
     transition: all .3s;
     background: #0C7A4E;
-    color: #fff;
+    color: #fff !important;
     position: relative;
     border: white;
     border-width: 1px;
     border-style: solid;
+    margin-top: 0px !important;
 }
 .comienzaExperiencia
 {
@@ -109,6 +110,37 @@ input[type="submit"]
         margin-top: -98px;
     }
 
+    .nav
+    {
+        display: block !important;
+        margin-top: -24px;
+        /* z-index: 3; */
+    }
+
+   
+
+}
+
+@media only screen and (min-width: 768px) 
+{
+    .navbar-expand-sm .navbar-nav .nav-link 
+    {
+        padding-right: .5rem;
+        padding-left: .5rem;
+        padding-top: 25px;
+        margin-top: -18px;
+        padding-bottom: 24px;
+        border-radius: 0px;
+    }
+    .navbar
+    {
+        padding-top:2px !important;
+    }
+
+    .nav-fill .nav-item 
+    {
+        min-width: 100px !important;
+    }
 }
 
 .tab-content
@@ -138,7 +170,8 @@ input[type="submit"]
 .imagenSolucion
 {
     width: 30%;
-    padding: 25px;
+    /* padding: 25px; */
+    border-radius: 3px;
     min-width: 196px;
     max-width: 400px;
     border: black;
@@ -167,7 +200,8 @@ input[type="submit"]
 .imagenB2B
 {
     width: 30%;
-    padding: 25px;
+    /* padding: 25px; */
+    border-radius: 3px;
     min-width: 210px;
     max-width: 400px;
     border: black;
@@ -245,8 +279,28 @@ input[type="submit"]
 
 }
 
+.casillaForm
+{
+    height: 48px;
+    min-width: 280px;
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: none;
+    padding: 6px;
+}
+
 .botonEnviarDatos
 {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.contactanosWA
+{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
 }
