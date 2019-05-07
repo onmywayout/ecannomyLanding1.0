@@ -4,25 +4,30 @@
 		function enviarForm()
 		{
 
-		   
-		        var telefono = document.getElementById("telefono").value;
-                     nombre = document.getElementById("nombre").value,
-		            email = document.getElementById("email").value,
-		            empresa = document.getElementById("empresa").value;
-		            
-
-		            if (!email) //la función se llama sola al cargar la página con campos vacios
-		                return;
-
-		        $.ajax({
+            var telefono = document.getElementById("telefono").value,
+            nombre = document.getElementById("nombre").value,
+            email = document.getElementById("email").value,
+            empresa = document.getElementById("empresa").value;
+            console.log(nombre);
+            console.log(email);
+            console.log(telefono);
+            console.log(empresa);
+            
+            if (!email) //la función se llama sola al cargar la página con campos vacios
+            return;
+            
+            
+            
+            
+            $.ajax({
 		            type: "POST",
 		            url: 'https://o6ur6ye60l.execute-api.us-east-1.amazonaws.com/prod/processContactFormRequest',
 		            contentType: 'application/json',
 		            data: JSON.stringify({
 		                'nombre': nombre,
-		                'email': email,
 		                'telefono': telefono,
-		                'empresa': empresa
+		                'email': email,
+		                'empresa': empresa,
 		            }),
 		            success: function(res)
 		            {
@@ -35,6 +40,7 @@
 		            }
 		        });
 		        return;
+
 
 		}
 
