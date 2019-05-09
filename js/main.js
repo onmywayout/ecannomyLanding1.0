@@ -7,11 +7,12 @@
             var telefono = document.getElementById("telefono").value,
             nombre = document.getElementById("nombre").value,
             email = document.getElementById("email").value,
-            empresa = document.getElementById("empresa").value;
-            console.log(nombre);
-            console.log(email);
-            console.log(telefono);
-            console.log(empresa);
+			empresa = document.getElementById("empresa").value;
+			tipoNegocio = document.getElementById("tipoNegocio").value;
+            // console.log(nombre);
+            // console.log(email);
+            // console.log(telefono);
+            // console.log(empresa);
             
             if (!email) //la función se llama sola al cargar la página con campos vacios
             return;
@@ -27,7 +28,8 @@
 		                'nombre': nombre,
 		                'telefono': telefono,
 		                'email': email,
-		                'empresa': empresa,
+						'empresa': empresa,
+						"tipoNegocio": tipoNegocio
 		            }),
 		            success: function(res)
 		            {

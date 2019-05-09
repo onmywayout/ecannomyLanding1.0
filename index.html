@@ -48,7 +48,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
                             <span class="navbar-toggler-icon" id="botonHamburguesa"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="collapse navbar-collapse" id="navbarNav" >
                     <ul class="navbar-nav" data-toggle="collapse" data-target="#navbarNav">
                         <ul class="nav nav-pills  nav-fill mb-3 TabsPrincipal" id="pills-tab" role="tablist" style="z-index: 5;">
                             <li class="nav-item">
@@ -93,12 +93,14 @@
             <!-- Tab Soluciones -->
             <div class="tab-pane fade  show active  tabSoluciones" id="pills-soluciones" role="tabpanel" aria-labelledby="pills-soluciones-tab">
                 <div class="solucionesSuperior">
-                    <div style="text-align:left">
+                    <div style="text-align:center">
                         <h3>Sé pionero</h3>
-                        <p>Aprovecha la dinámica del mercado e invierte en <br> disruptivos proyectos de alto rendimiento
-                        </p>
+                        <div class="col-sm-12 col-md-2 text-center centrar" >
+                            <p>Aprovecha la dinámica del mercado, invierte y participa en  disruptivos proyectos de alto rendimiento
+                            </p>
+                        </div>
+                        
                     </div>
-                <!-- <input class="submit-btn botonContactanos comienzaExperiencia" onclick='document.getElementById("pills-contact-form").click()' id="submit" type="submit" value="Comienza tu experiencia" /> -->
                 </div>    
 
                 <div class="container">
@@ -130,6 +132,8 @@
                         
                     </div>
                 </div>
+                <input class="submit-btn botonContactanos comienzaExperiencia" onclick='document.getElementById("pills-contact-form").click()' id="submit" type="submit" value="Sé pionero" />
+
             </div>
     
             <!-- Tab B2B -->
@@ -145,8 +149,9 @@
                     <div class="row">
                         <div class="col-sm-3 text-md-left">
                             <img src="assets/corporativo.png" class="imagenB2B">
+                            <br><br>
                         </div>
-                        <div class="col-sm-8 offset-1 text-md-left">
+                        <div class="col-sm-8 offset-md-1 text-md-left">
                             <b>Corporativo</b>
                             <br><br>
                             <p>Las relaciones consolidadas dentro del entorno ecannomy se llevan a cabo entre compañías formalmente acreditadas para efectuar operaciones con cannabis medicinal y sus derivados
@@ -158,6 +163,7 @@
                     <div class="row">
                         <div class="col-sm-3 d-none d-block d-md-none">
                             <img src="assets/security.png" class="imagenB2B">
+                            <br><br>
                         </div>
                         <div class="col-sm-9 text-md-left">
                             <b>Seguridad</b>
@@ -173,14 +179,17 @@
                         <div class="row">
                             <div class="col-sm-3 text-md-left ">
                                 <img src="assets/dueDiligence.png" class="imagenB2B">
+                                <br><br>
                             </div>
-                            <div class="col-sm-8 offset-1  text-md-left">
+                            <div class="col-sm-8 offset-md-1  text-md-left">
                                 <b>Debida diligencia</b>
                                 <br><br>
                                 <p>Cumpliendo los requisitos legales y regulatorios establecidos, brindamos confianza a través de la verificación en listas restrictivas de cada participante inmerso en las negociaciones de nuestra plataforma.
                                 </p>
                             </div>
                         </div>
+                <input class="submit-btn botonContactanos comienzaExperiencia" onclick='document.getElementById("pills-contact-form").click()' id="submit" type="submit" value="Haz presencia" />
+
                             <br>
                 </div>
 
@@ -196,12 +205,12 @@
             <div class="acercaDeSuperior">
                 <div class="container ">
                     <div class="row">
-                        <div class="col-sm-10 offset-1 text-center no-gutters">
-
-                            <p>creemos en la evolución de la economía cannábica basada en el libre mercado
+                        <div class="col-sm-10 offset-md-1 text-center no-gutters">
+                             <h2>Nosotros</h2>
+                             <!-- <br> -->
+                            <p>Creemos en la evolución de la economía cannábica basada en el libre mercado
                             </p>
-                            <br>
-                            <p>usamos la tecnología como medio para garantizar la generación de conocimiento y el desarrollo cultural en nuestra sociedad
+                            <p>usamos la tecnología como medio para garantizar la generación de conocimiento y el desarrollo cultural en nuestra sociedad.
                             </p>
                         </div>    
                     </div>    
@@ -210,12 +219,12 @@
             <div class="container ">
                     <div class="row ">
                         <div class="col-sm-10 offset-1 text-center no-gutters">     
-                        <h2>QUIENES SOMOS         </h2>
-                        <br>
+                        <h2>Quienes somos         </h2>
+                        <!-- <br> -->
                         <p>La plataforma digital que facilita la interacción entre los actores del mercado cannábico.
                         </p>
-                        <br>
-                        <p>Impulsamos la comunidad empresarial en la que se optimiza el acceso, el precio y la calidad de la marihuana medicinal
+                        <!-- <br> -->
+                        <p>Impulsamos la comunidad empresarial en la que se optimiza el acceso, el precio y la calidad de la marihuana medicinal.
                         </p>
                     </div>
                     </div>
@@ -250,6 +259,15 @@
                                             <div class="email-input-area">
                                                 <input class="casillaForm" id="telefono" type="text" placeholder="Teléfono" required />
                                                 <input class="casillaForm"  id="empresa" type="text" placeholder="Empresa" required/>
+                                                <select class="casillaForm" id="tipoNegocio">
+                                                    <option value="No Seleccionado">Tipo de negocio</option>
+                                                    <option value="Cultivo">Cultivo</option>
+                                                    <option value="Inversion">Inversión</option>
+                                                    <option value="Procesamiento">Procesamiento</option>
+                                                    <option value="Exportacion">Exportación</option>
+                                                    <option value="Toda la cadena">Toda la cadena</option>
+                                                    <option value="Otro">Otro</option>
+                                                  </select>
                                                 <br>
                                                 <br>
 							<input class="submit-bt botonEnviarDatos" id="submit" type="submit" value="Notificame" />
