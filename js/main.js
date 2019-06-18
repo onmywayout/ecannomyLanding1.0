@@ -45,6 +45,53 @@
 
 
 		}
+		/**
+		 * Enviar formulario de contacto y mostrar respuesta en INGLES
+		 */
+		function sendForm()
+		{
+
+            var telefono = document.getElementById("telefono").value,
+            nombre = document.getElementById("nombre").value,
+            email = document.getElementById("email").value,
+			empresa = document.getElementById("empresa").value;
+			tipoNegocio = document.getElementById("tipoNegocio").value;
+            // console.log(nombre);
+            // console.log(email);
+            // console.log(telefono);
+            // console.log(empresa);
+            
+            if (!email) //la función se llama sola al cargar la página con campos vacios
+            return;
+            
+            
+            
+            
+            $.ajax({
+		            type: "POST",
+		            url: 'https://o6ur6ye60l.execute-api.us-east-1.amazonaws.com/prod/processContactFormRequest',
+		            contentType: 'application/json',
+		            data: JSON.stringify({
+		                'nombre': nombre,
+		                'telefono': telefono,
+		                'email': email,
+						'empresa': empresa + " (PG INGLES)",
+						"tipoNegocio": tipoNegocio
+		            }),
+		            success: function(res)
+		            {
+		                alert("Your data has been correctly submitted");
+		            },
+		            error: function(res)
+		            {
+		                alert("We are so sorry, there has been an error");
+		                console.log(res);
+		            }
+		        });
+		        return;
+
+
+		}
 
 		/**
 		 * Vuelve a habilitar el form para que se pueda enviar otro mensaje despues del primero
