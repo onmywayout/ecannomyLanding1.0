@@ -75,7 +75,7 @@
 		                'nombre': nombre,
 		                'telefono': telefono,
 		                'email': email,
-						'empresa': empresa + " (PG INGLES)",
+						'empresa': empresa,
 						"tipoNegocio": tipoNegocio
 		            }),
 		            success: function(res)
